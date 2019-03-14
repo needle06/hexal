@@ -1,7 +1,8 @@
 *{
   margin:0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 body{
   color: black;
@@ -134,7 +135,9 @@ main{
   width: 180px;
   height: 207px;
   margin: 5px 12.5px 5px 5px;
-  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg);
   overflow: hidden;
   visibility: hidden;
   display: inline-block;
@@ -143,14 +146,18 @@ main{
 .hex-layer-1{
   width: 100%;
   height: 100%;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   visibility: hidden;
   overflow: hidden;
 }
 .hex-layer-2{
   width: 100%;
   height: 100%;
-  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+          transform: rotate(-60deg);
   overflow: hidden;
   visibility: visible;
   background-repeat: no-repeat;
@@ -227,7 +234,8 @@ p{
 .links{
   margin-top: 33px;
   text-align: right;
-  filter: grayscale(100%) invert(100%) opacity(40%) contrast(1) brightness(1.5);
+  -webkit-filter: grayscale(100%) invert(100%) opacity(40%) contrast(1) brightness(1.5);
+          filter: grayscale(100%) invert(100%) opacity(40%) contrast(1) brightness(1.5);
 }
 .links img:hover{
   width: 30px;
@@ -273,6 +281,8 @@ width: 580px;
   border: 0px solid #454545; 
   font-family: Maven Pro, Arial, sans-serif;
   outline: none;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
   transition: .3s ease; 
 }
 
@@ -292,6 +302,8 @@ textarea.control {
   margin-left: 490px;
 }
 .wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   
 }
@@ -323,5 +335,3 @@ textarea.control {
   font-size: 8.9pt;
   color: rgba(69, 69, 69, 255);
 }
-
-
